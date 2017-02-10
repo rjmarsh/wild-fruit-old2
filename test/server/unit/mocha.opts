@@ -1,0 +1,2 @@
+--require test/server/unit/chai.conf.js
+--reporter spec
