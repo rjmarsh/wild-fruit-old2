@@ -19,7 +19,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.header {
-		background-color: #A4A6A9;
+		background-color: #5A6100;
 		color: #ffffff;
 		padding: 15px;
 		line-height: 2.25em;
@@ -33,5 +33,6 @@
 	.header_text {
 		margin-left:20px;
 		font-size: 50px;
+		font-family: "Georgia";
 	}
 </style>
