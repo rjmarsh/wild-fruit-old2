@@ -1,25 +1,19 @@
 <template>
 	<div>
-		<st-service-box v-for="service in services" :service="service"></st-service-box>
+		<wf-body></wf-body>
 	</div>
 </template>
 
 <script>
-	import stServiceBox from '../components/service-box';
+	import wfBody from '../components/body';
 
 	export default {
 		name: 'main',
-		props: {
-			services: {
-				type: Array,
-				default: [],
-			},
-		},
 		data() {
 			return {};
 		},
 		components: {
-			stServiceBox,
+			wfBody,
 		},
 	};
 </script>

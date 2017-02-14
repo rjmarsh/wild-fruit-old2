@@ -9,7 +9,7 @@
 
 <script>
 	export default {
-		name: 'st-header',
+		name: 'wf-header',
 		data() {
 			return {};
 		},

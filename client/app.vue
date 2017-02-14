@@ -1,34 +1,18 @@
 <template>
 	<div>
 		<div id="outer_wrapper">
-			<st-header></st-header>
+			<wf-header></wf-header>
 			<div id="main_content">
-				<div class="column_container top_headline_container">
-					<div class="left top_headline" v-if="$route.path === '/'">
-						{{$root.$data.mainCallout}}
-					</div>
-					<div class="right support_message">
-						<span>Need Support?</span>
-						<a href="https://helpx.adobe.com/support.html">Contact Adobe Customer Care</a>
-						<st-search v-bind:search-items="$root.$data.searchItems"></st-search>
-					</div>					
-				</div>
-				<div v-if="$root.$data.globalMessage" class="service_box global_message">{{$root.$data.globalMessage}}</div>
-				<router-view :services="$root.$data.services" :all-service-data="$root.$data.allServices"></router-view>
-				<div class="service_box">
-					<st-legend></st-legend>
-				</div>
+				<router-view></router-view>
 			</div>
 		</div>
-		<st-footer></st-footer>
+		<wf-footer></wf-footer>
 	</div>
 </template>
 
 <script>
-	import stLegend from './components/legend';
-	import stFooter from './components/footer';
-	import stHeader from './components/header';
-	import stSearch from './components/search';
+	import wfFooter from './components/footer';
+	import wfHeader from './components/header';
 
 	export default {
 		name: 'app',
@@ -41,10 +25,8 @@
 
 		},
 		components: {
-			stLegend,
-			stFooter,
-			stHeader,
-			stSearch,
+			wfFooter,
+			wfHeader,
 		},
 	};
 </script>
@@ -348,186 +330,6 @@
 	.tabs > ul > li.selected {
 		border-bottom: 2px solid #698eca;
 		opacity: 1;
-	}
-
-	.service_history_wrapper {
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-		overflow: hidden;
-	}
-
-	.service_history_left_column {
-		display: table-cell;
-		white-space: nowrap;
-		margin: 0 6px;
-		vertical-align: top;
-		box-sizing: border-box;
-		width: 315px;
-		position: relative;
-		top: -3px;
-	}
-
-	.service_history_left_column > div {
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.service_history_left_column .capability_name, .service_history_left_column .solution_name {
-		display: table-cell;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		vertical-align: middle;
-		text-align: left;
-	}
-
-	.service_history_left_column .solution_name {
-		display: inline-block;
-		width: 180px;
-	}
-
-	.service_history_right_column {
-		white-space: nowrap;
-		vertical-align: top;
-		overflow: auto;
-		box-shadow: 0 2px 6px 6px #f3f4f5 inset;
-		position: relative;
-		top: -9px;
-	}
-
-	.service_history_table {
-		table-layout: fixed;
-		border-collapse: collapse;
-		box-sizing: border-box;
-		width: 100%;
-		border-top: 10px solid #f3f4f5;
-	}
-
-	.service_history_table td:first-child {
-		background-color: #f8f8f8;
-	}
-
-	.service_history_table th, .service_history_table td {
-		text-align: center;
-		width: 68px;
-		padding: 0;
-	}
-
-	.service_history_header_row {
-		height: 50px;
-		font-weight: bold;
-	}
-
-	.service_history_solution_row {
-		height: 60px;
-		padding-left: 20px;
-	}
-
-	.service_history_border_row {
-		border-bottom: 1px solid #f3f4f5;
-		height: 40px;
-	}
-
-	.service_history_capability_row {
-		height: 50px;
-		padding-left: 95px;
-	}
-
-	.service_history_capability_no_solution_row {
-		font-weight: bold;
-		height: 50px;
-		padding-left: 95px;
-	}
-
-	.service_history_scroll_arrows {
-		text-align: center;
-	}
-
-	.service_history_scroll_arrows img {
-		padding: 5px 10px;
-		cursor: pointer;
-	}
-
-	.history_status_icon {
-		vertical-align: middle;
-		cursor: pointer;
-	}
-
-	.day_history_date {
-		padding-left: 20px;
-		font-weight: bold;
-	}
-
-	.day_history_table {
-		width: 100%;
-	}
-
-	.day_history_table td:first-child {
-		color: #999999;
-		white-space: nowrap;
-		width: 120px;
-	}
-
-	.day_history_table td {
-		padding: 20px;
-		vertical-align: top;
-		border-bottom: 1px solid #f3f4f5;
-	}
-
-	.day_history_event_title {
-		white-space: nowrap;
-	}
-
-	.day_history_event_content {
-		padding-top: 16px;
-		padding-left: 24px;
-	}
-
-	.popup_box .day_history_table tr:last-of-type td {
-		border-bottom: 0;
-	}
-
-	.popup_box .day_history_table td:first-child {
-		width: 20px;
-	}
-
-	.problem {
-		display: block;
-		padding: 10px 0px;
-		font-weight: bold;
-	}
-
-	.affected_services {
-		padding: 0 20px;
-		margin: 0;
-		line-height: 1.5em;
-	}
-
-	.planned_maintenance_table {
-		text-align: center;
-		width: 100%;
-		border-spacing: 0;
-	}
-
-	.planned_maintenance_table td:first-child, .planned_maintenance_table th:first-child {
-		text-align: left;
-	}
-
-	.planned_maintenance_table th, .planned_maintenance_table td {
-		padding: 20px 30px;
-		vertical-align: top;
-	}
-
-	.planned_maintenance_table td {
-		border-top: 1px solid #f3f4f5;
-	}
-
-	.planned_maintenance_table ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
 	}
 
 	.popup_box {
