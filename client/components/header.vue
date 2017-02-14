@@ -19,18 +19,19 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.header {
-		background-color: #1d1e1e;
+		background-color: #A4A6A9;
 		color: #ffffff;
 		padding: 15px;
 		line-height: 2.25em;
 	}
 
 	img {
-		height: 1.5em;
+		height: 10.5em;
 		vertical-align: middle;
 		padding-right: 3px;
 	}
 	.header_text {
-		margin-left: 3px;
+		margin-left:20px;
+		font-size: 50px;
 	}
 </style>
