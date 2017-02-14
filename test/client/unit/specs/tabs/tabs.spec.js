@@ -1,11 +1,11 @@
 import Vue from 'vue';
-import stTabs from 'client/components/tabs/tabs';
+import wfTabs from 'client/components/tabs/tabs';
 import stTabPane from 'client/components/tabs/tabpane';
 
 describe('tabs.vue', () => {
 	it('sets the correct default data', () => {
-		expect(typeof stTabs.data).to.equal('function');
-		const defaultData = stTabs.data();
+		expect(typeof wfTabs.data).to.equal('function');
+		const defaultData = wfTabs.data();
 		expect(defaultData.realSelectedIndex).to.be.undefined;
 		expect(defaultData.tabPanes).to.be.empty;
 	});
@@ -13,9 +13,9 @@ describe('tabs.vue', () => {
 	it('should render with correct values', () => {
 		const vm = new Vue({
 			components: {
-				stTabs,
+				wfTabs,
 			},
-			template: `<st-tabs></st-tabs>`
+			template: `<wf-tabs></wf-tabs>`
 		}).$mount().$children[0];
 		expect(vm.realSelectedIndex).to.be.equal(0);
 		expect(vm.tabPanes).to.be.empty;
@@ -24,15 +24,15 @@ describe('tabs.vue', () => {
 	it('should correctly render configured panes', (done) => {
 		const vm = new Vue({
 			components: {
-				stTabs,
+				wfTabs,
 				stTabPane,
 			},
 			template: `
-			<st-tabs>
+			<wf-tabs>
 				<st-tab-pane label="tab1">tab1 content</st-tab-pane>
 				<st-tab-pane label="tab2" selected>tab2 content</st-tab-pane>
 				<st-tab-pane label="tab3">tab 3 content</st-tab-pane>
-			</st-tabs>
+			</wf-tabs>
 		  `,
 		}).$mount().$children[0];
 

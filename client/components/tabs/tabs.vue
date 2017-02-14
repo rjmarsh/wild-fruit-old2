@@ -1,12 +1,12 @@
 <template>
 	<div class="tabs">
-		<st-tab-list>
+		<wf-tab-list>
 			<li v-for="(tab, index) in tabPanes"
 				role="tab"
 				:class="{selected: isActived(index)}"
 				:selected="isActived(index)"
 				@click="select(index)">{{tab.label}}</li>
-		</st-tab-list>
+		</wf-tab-list>
 		<div class="tab_panel">
 			<slot></slot>
 		</div>
@@ -14,12 +14,12 @@
 </template>
 
 <script>
-	import stTabList from './tablist';
+	import wfTabList from './tablist';
 
 	export default {
-		name: 'st-tabs',
+		name: 'wf-tabs',
 		components: {
-			stTabList,
+			wfTabList,
 		},
 		data() {
 			return {

@@ -21,9 +21,6 @@
 
 			};
 		},
-		computed: {
-
-		},
 		components: {
 			wfFooter,
 			wfHeader,
@@ -46,56 +43,6 @@
 		content: '';
 		display: block;
 		height: 75px;
-	}
-
-	.language_div {
-		display: table-cell;
-		height: 44px;
-		vertical-align: middle;
-		white-space: nowrap;
-	}
-
-	.language_selector {
-		color: #ffffff;
-		cursor: pointer;
-	}
-
-	.language_selector:hover {
-		color: #9ce;
-	}
-
-	.language_selector:hover > span.choose_language::before {
-		content: url('/static/img/world_blue.png');
-	}
-
-	span.choose_language {
-		height: 26px;
-		line-height: 26px;
-		vertical-align: middle;
-	}
-
-	span.choose_language::before {
-		content: url('/static/img/world_white.png');
-		display: inline-block;
-		padding-right: 0.5em;
-		line-height: normal;
-		vertical-align: middle;
-	}
-
-	.language_select_header_text {
-		font-size: 1.3em;
-	}
-
-	ul.localization_languages {
-		padding: 1em 1em 1em 0;
-		margin: 0;
-	}
-
-	ul.localization_languages > li {
-		list-style-type: none;
-		color: #2b9af3;
-		line-height: 1.8em;
-		cursor: pointer;
 	}
 
 	div.modal_container {
@@ -380,17 +327,6 @@
 
 	.popup_box.open_up::after {
 		border-color: transparent transparent #ffffff #ffffff;
-	}
-
-	.popup_box .close_button {
-		content: "";
-		position: absolute;
-		top: 2px;
-		right: 2px;
-		background: url('/static/img/close_black.png') top right no-repeat;
-		padding: 9px;
-		cursor: pointer;
-		display: none;
 	}
 
 	.popup_header {

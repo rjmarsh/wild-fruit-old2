@@ -17,7 +17,7 @@
 
 <script>
 	export default {
-		name: 'st-modal',
+		name: 'wf-modal',
 		props: {
 			close: {
 				type: Boolean,

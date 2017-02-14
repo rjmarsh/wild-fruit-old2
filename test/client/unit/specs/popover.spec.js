@@ -1,11 +1,11 @@
 import Vue from 'vue';
-import stPopover from 'client/components/popover';
+import wfPopover from 'client/components/popover';
 
 describe('popover.vue', () => {
 
 	it('sets the correct default data', () => {
-		expect(typeof stPopover.data).to.equal('function');
-		const defaultData = stPopover.data();
+		expect(typeof wfPopover.data).to.equal('function');
+		const defaultData = wfPopover.data();
 		expect(defaultData.show).to.equal(false);
 		expect(defaultData.position).to.deep.equal({
 			top: 0,
@@ -16,15 +16,15 @@ describe('popover.vue', () => {
 	it('should correctly toggle when clicked', () => {
 		const vm = new Vue({
 			components: {
-				stPopover,
+				wfPopover,
 			},
 			template: `
-      <st-popover placement="bottom">
+      <wf-popover placement="bottom">
         <button slot="trigger">click me</button>
         <div slot="content">
           <h1>Hello, World</h1>
         </div>
-      </st-popover>
+      </wf-popover>
       `
 		}).$mount().$children[0];
 

@@ -6,27 +6,12 @@
 					  data-localize-default-text="Change Language"></span>
 			</span>
 		</div>
-		<div class="nav_links">
-			<span class="copyright localize_text" data-localize-key="footer_copyright"
-				  data-localize-default-text="Copyright &copy;2017 Adobe Systems Incorporated. All rights reserved."></span>
-			<a href="//www.adobe.com/privacy.html">
-				<span class="localize_text" data-localize-key="footer_privacy" data-localize-default-text="Privacy">Privacy</span>
-			</a>
-			<span class="nav_divider">/</span>
-			<a href="//www.adobe.com/legal/general-terms.html">
-				<span class="localize_text" data-localize-key="footer_terms" data-localize-default-text="Terms of Use">Terms of Use</span>
-			</a>
-			<span class="nav_divider">/</span>
-			<a href="//www.adobe.com/privacy/cookies.html">
-				<span class="localize_text" data-localize-key="footer_cookies" data-localize-default-text="Cookies">Cookies</span>
-			</a>
-		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'st-footer',
+		name: 'wf-footer',
 		data() {
 			return {};
 		},

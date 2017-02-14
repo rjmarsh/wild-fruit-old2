@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<router-link to="/">
-			<img src="/static/img/adobe_logo.png"/><span class="localize_text header_text">System Status</span>
+			<img src="/static/img/olive_tree.png"/><span class="localize_text header_text">Wild Fruit</span>
 		</router-link>
 		<span id="breadcrumb"></span>
 	</div>

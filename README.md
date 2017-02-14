@@ -1,10 +1,7 @@
-# status.adobe.com
-
-> External System Status Tool
+> Wild Fruit - A FamilySearch web application that finds duplicates, or "wild fruit", in your family tree
 
 ## Build Setup
 
-``` bash
 # install dependencies
 npm install
 
@@ -28,4 +25,3 @@ npm run e2e
 
 # run all tests
 npm test
-```

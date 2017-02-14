@@ -6,7 +6,7 @@
 
 <script>
 	export default {
-		name: 'st-tab-list',
+		name: 'wf-tab-list',
 		props: {},
 		computed: {
 			classObject() {

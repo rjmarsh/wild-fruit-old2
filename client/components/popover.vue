@@ -17,7 +17,7 @@
 
 <script>
 	export default {
-		name: 'st-popover',
+		name: 'wf-popover',
 		props: {
 			content: {
 				type: String,
