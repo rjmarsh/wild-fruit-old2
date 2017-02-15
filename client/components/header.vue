@@ -1,9 +1,9 @@
 <template>
 	<div class="header">
 		<router-link to="/">
+			<!-- Each of these elements (img and span) is a link to "/". Honestly not very interesting unless we end up with multiple virtual pages. -->
 			<img src="/static/img/olive_tree.png"/><span class="localize_text header_text">Wild Fruit</span>
 		</router-link>
-		<span id="breadcrumb"></span>
 	</div>
 </template>
 
@@ -26,13 +26,13 @@
 	}
 
 	img {
-		height: 10.5em;
+		height: 6.0em;
 		vertical-align: middle;
-		padding-right: 3px;
+		padding-right: 1px;
 	}
 	.header_text {
 		margin-left:20px;
-		font-size: 50px;
+		font-size: 30px;
 		font-family: "Georgia";
 	}
 </style>

@@ -376,15 +376,6 @@
 		color: #474645;
 	}
 
-	.breadcrumb {
-		font-weight: bold;
-		font-size: 15px;
-		color: #232323;
-		opacity: .85;
-		padding-bottom: 10px;
-		display: inline-block;
-	}
-
 	label {
 		font-size: x-small;
 		font-weight: bold;

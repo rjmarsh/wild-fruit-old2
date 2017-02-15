@@ -1,6 +1,11 @@
 <template>
 	<div class="body">
-		<router-link to="/"></router-link>
+		<div>
+			<img id="one" src="/static/img/olive_branch.jpg">
+		</div>
+		<div>
+			<img id="two" src="/static/img/olive_tree.png">
+		</div>
 	</div>
 </template>
 
@@ -22,5 +27,15 @@
 		box-shadow: 0 1px 0 0 rgba(35, 31, 32, .12);
 
 		margin-bottom: 20px;
+	}
+
+	.one {
+		height: 40.0em;
+		padding-right: 1px;
+	}
+
+	.two {
+		height: 60.0em;
+		padding-right: 1px;
 	}
 </style>
