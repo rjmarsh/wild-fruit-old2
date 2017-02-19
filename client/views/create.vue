@@ -1,19 +1,19 @@
 <template>
 	<div>
-		<wf-current></wf-current>
+		<wf-create></wf-create>
 	</div>
 </template>
 
 <script>
-	import wfCurrent from '../components/current-workload';
+	import wfCreate from '../components/create-workload';
 
 	export default {
-		name: 'main',
+		name: 'Create',
 		data() {
 			return {};
 		},
 		components: {
-			wfCurrent,
+			wfCreate,
 		},
 	};
 </script>

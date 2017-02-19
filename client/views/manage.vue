@@ -1,19 +1,21 @@
 <template>
 	<div>
-		<wf-current></wf-current>
+		<wf-manage></wf-manage>
 	</div>
 </template>
 
 <script>
-	import wfCurrent from '../components/current-workload';
+	import wfManage from '../components/manage-workloads';
 
 	export default {
-		name: 'main',
+		name: 'Manage',
 		data() {
 			return {};
 		},
 		components: {
-			wfCurrent,
+			wfManage,
 		},
 	};
 </script>
+
+

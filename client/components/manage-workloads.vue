@@ -1,17 +1,14 @@
 <template>
 	<div class="body">
-		<div>
-			<img id="one" src="/static/img/olive_branch.jpg">
-		</div>
-		<div>
-			<img id="two" src="/static/img/olive_tree.png">
-		</div>
-	</div>
+ 		<div>
+ 			<img id="one" src="/static/img/FSMosaicTreeLogo.png">
+ 		</div>
+  	</div>>
 </template>
 
 <script>
 	export default {
-		name: 'wf-body',
+		name: 'wf-manage',
 		data() {
 			return {};
 		},
@@ -30,12 +27,8 @@
 	}
 
 	.one {
-		height: 40.0em;
-		padding-right: 1px;
-	}
+   		height: 10.0em;
+   		padding-right: 1px;
+   	}
 
-	.two {
-		height: 60.0em;
-		padding-right: 1px;
-	}
 </style>
