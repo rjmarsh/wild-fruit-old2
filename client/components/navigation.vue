@@ -39,8 +39,7 @@
 	table {
 		margin-top: 40px;
 		margin-bottom: 40px;
-		border: 2px solid #5A6100;
-	}
+		border: 2px solid #5A6100;	}
 
 	tr {text-align:center;}
 
