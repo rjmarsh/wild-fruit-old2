@@ -2,6 +2,7 @@
 	<div>
 		<div id="outer_wrapper">
 			<wf-header></wf-header>
+			<wf-navigate></wf-navigate>
 			<div id="main_content">
 				<router-view></router-view>
 			</div>
@@ -11,8 +12,9 @@
 </template>
 
 <script>
-	import wfFooter from './components/footer';
 	import wfHeader from './components/header';
+	import wfNavigate from './components/navigation';
+	import wfFooter from './components/footer';
 
 	export default {
 		name: 'app',
@@ -22,8 +24,9 @@
 			};
 		},
 		components: {
-			wfFooter,
 			wfHeader,
+			wfNavigate,
+			wfFooter,
 		},
 	};
 </script>

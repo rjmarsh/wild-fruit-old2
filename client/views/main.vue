@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import wfCurrent from '../components/current-workload';
+	import wfCurrent from '../components/current-workflow';
 
 	export default {
 		name: 'main',

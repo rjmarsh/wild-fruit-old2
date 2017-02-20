@@ -1,8 +1,6 @@
 <template>
 	<div class="body">
- 		<div>
- 			<img id="one" src="/static/img/FSMosaicTreeLogo.png">
- 		</div>
+ 		<div>Manage</div>
   	</div>>
 </template>
 
@@ -25,10 +23,5 @@
 
 		margin-bottom: 20px;
 	}
-
-	.one {
-   		height: 10.0em;
-   		padding-right: 1px;
-   	}
 
 </style>

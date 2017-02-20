@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import wfCreate from '../components/create-workload';
+	import wfCreate from '../components/create-workflow';
 
 	export default {
 		name: 'Create',

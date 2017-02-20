@@ -1,8 +1,6 @@
 <template>
 	<div class="body">
- 		<div>
- 			<img id="two" src="/static/img/olive_tree.png">
- 		</div>
+ 		<div>Create</div>
   	</div>>
 </template>
 
@@ -24,11 +22,6 @@
 		box-shadow: 0 1px 0 0 rgba(35, 31, 32, .12);
 
 		margin-bottom: 20px;
-	}
-
-	.two {
-		height: 40.0em;
-		padding-right: 1px;
 	}
 
 </style>

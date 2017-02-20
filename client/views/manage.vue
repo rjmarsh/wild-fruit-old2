@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import wfManage from '../components/manage-workloads';
+	import wfManage from '../components/manage-workflows';
 
 	export default {
 		name: 'Manage',

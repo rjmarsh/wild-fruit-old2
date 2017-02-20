@@ -17,11 +17,11 @@ const routes = [
 				component: Main,
 			},
 			{
-				path: '/create-workload',
+				path: '/create-workflow',
 				component: Create,
 			},
 			{
-				path: '/manage-workloads',
+				path: '/manage-workflows',
 				component: Manage,
 			},
 		],
