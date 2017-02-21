@@ -3,13 +3,16 @@
 		<table class="center">
 			<tr>
 				<td>
-					<a href="\" class="button">Current Workflow</a>
+					<a href="\">Current Workflow</a>
 				</td>
 				<td>
-					<a href="\create-workflow" class="button">Create a New Workflow</a>
+					<a href="\create-workflow">Create a New Workflow</a>
 				</td>
 				<td>
-					<a href="\manage-workflows" class="button">Manage Workflows</a>
+					<a href="\manage-workflows">Manage Workflows</a>
+				</td>
+				<td>
+					<a href="\learn">Learn</a>
 				</td>
 			</tr>
 		</table>
@@ -31,7 +34,7 @@
 	 table.center {
     	margin-left:auto;
     	margin-right:auto;
-    	width:700px;
+    	width: 800px;
     	height: 45px;
 		background-color: #d1d7b3;
   	}

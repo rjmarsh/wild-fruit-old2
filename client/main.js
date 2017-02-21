@@ -4,6 +4,7 @@ import App from './app';
 import Main from './views/main';
 import Create from './views/create';
 import Manage from './views/manage';
+import Learn from './views/learn';
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,10 @@ const routes = [
 				path: '/manage-workflows',
 				component: Manage,
 			},
+			{
+				path: "/learn",
+				component: Learn,
+			}
 		],
 	},
 ];
