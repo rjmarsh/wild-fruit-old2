@@ -16,12 +16,12 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.footer {
-		padding: 15px;
-		margin: 0;
+		position: absolute;
+		bottom: 0;
 		border-top: solid 1px rgba(255, 255, 255, .2);
 		font-size: 14px;
-		width: 100%;
 		box-sizing: border-box;
+		width: 1000px;
 	}
 
 	img {
