@@ -1,9 +1,6 @@
 <template>
 	<div class="header">
-		<router-link to="/">
-			<!-- Each of these elements (img and span) is a link to "/". Honestly not very interesting unless we end up with multiple virtual pages. -->
-			<img src="/static/img/olive_tree.png"/><span class="localize_text header_text">Wild Fruit</span>
-		</router-link>
+		<img class="olive_tree" src="/static/img/olive_tree.png"/><span class="localize_text header_text">Wild Fruit</span>
 	</div>
 </template>
 
@@ -19,10 +16,12 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.header {
+		display: table;
 		background-color: #5A6100;
 		color: #ffffff;
 		padding: 15px;
 		line-height: 2.25em;
+		width: 100%;
 	}
 
 	img {
@@ -30,9 +29,11 @@
 		vertical-align: middle;
 		padding-right: 1px;
 	}
-	.header_text {
+
+	header.header_text {
 		margin-left:20px;
 		font-size: 30px;
 		font-family: "Georgia";
 	}
+
 </style>

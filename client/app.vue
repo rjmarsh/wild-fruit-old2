@@ -34,11 +34,12 @@
 <style>
 	html, body {
 		height: 100%;
-		margin: 0;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
 		padding: 0;
 		font-family: adobe-clean, myriad-pro, sans-serif;
-		background-color: #f6f7f8;
-		color: #373737;
+		background-color: #373737;
 		font-size: 16px;
 	}
 
