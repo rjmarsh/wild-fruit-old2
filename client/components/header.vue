@@ -5,9 +5,11 @@
 		</div>
 		<div class="wild_fruit_status">
 			<div class="FamilySearch_login">
-				<div class="FamilySearch_logo">familysearchlogo</div>
 				<div class="FamilySearch_signin_signout">logout</div>
 				<div class="FamilySearch_username">rjmarsh</div>
+			</div>
+			<div class="FamilySearch_logo">
+				<img class="fsicon" src="/static/img/icons/FamilySearch Logo/FSMosaicTreeLogo.png"/>
 			</div>
 		</div>
 	</div>
@@ -36,10 +38,6 @@
 		flex: 2;
 	}
 
-	.wild_fruit_status {
-		flex: 3;
-	}
-
 	img {
 		height: 6.0em;
 		vertical-align: middle;
@@ -52,15 +50,23 @@
 		font-family: "Georgia";
 	}
 
-	.FamilySearch_login {
-		display: flex;
+	.wild_fruit_status {
+		flex: 3;
 	}
 
-	.FamilySearch_logo {
-		flex: 2;
+
+	.FamilySearch_login {
+		display: flex;
+		height: 50%;
+	}
+
+	.FamilySearch_username {
+		flex: 1;
 		order: 1;
-		flex-basis: 70%;
+		flex-basis: 85%;
 		text-align: right;
+		font-size: 14px;
+		font-family: "Georgia";
 	}
 
 	.FamilySearch_signin_signout {
@@ -68,17 +74,21 @@
 		order: 2;
 		flex-basis: 15%;
 		text-align: right;
+		padding-right: 5px;
 		font-size: 14px;
 		font-family: "Georgia";
 	}
 
-	.FamilySearch_username {
-		flex: 1;
-		order: 3;
-		flex-basis: 15%;
-		text-align: right;
-		font-size: 14px;
-		font-family: "Georgia";
+	.FamilySearch_logo {
+		display: flex;
+		height: 50%;
 	}
+
+	img.fsicon {
+		height: 2.0em;
+		padding-right: 5px;
+		margin-left: auto;
+	}
+
 
 </style>
