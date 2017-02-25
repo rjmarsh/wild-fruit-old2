@@ -28,13 +28,12 @@
 		display: flex;
 		background-color: #5A6100;
 		color: #ffffff;
-		padding: 15px;
 		line-height: 2.25em;
 		width: 100%;
 	}
 
 	.wild_fruit_logo {
-		flex: 1;
+		flex: 2;
 	}
 
 	.wild_fruit_status {
@@ -47,7 +46,7 @@
 		padding-right: 1px;
 	}
 
-	header.header_text {
+	.header_text {
 		margin-left:20px;
 		font-size: 30px;
 		font-family: "Georgia";
@@ -59,15 +58,27 @@
 
 	.FamilySearch_logo {
 		flex: 2;
-		vertical-align: middle;
+		order: 1;
+		flex-basis: 70%;
+		text-align: right;
 	}
 
 	.FamilySearch_signin_signout {
 		flex: 1;
+		order: 2;
+		flex-basis: 15%;
+		text-align: right;
+		font-size: 14px;
+		font-family: "Georgia";
 	}
 
 	.FamilySearch_username {
 		flex: 1;
+		order: 3;
+		flex-basis: 15%;
+		text-align: right;
+		font-size: 14px;
+		font-family: "Georgia";
 	}
 
 </style>

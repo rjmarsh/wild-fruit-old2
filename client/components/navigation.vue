@@ -1,21 +1,9 @@
 <template>
-	<div>
-		<table class="center">
-			<tr>
-				<td>
-					<a href="\">Current Workflow</a>
-				</td>
-				<td>
-					<a href="\create-workflow">Create a New Workflow</a>
-				</td>
-				<td>
-					<a href="\manage-workflows">Manage Workflows</a>
-				</td>
-				<td>
-					<a href="\learn">Learn</a>
-				</td>
-			</tr>
-		</table>
+	<div class="nav_container">
+		<div class="nav_link"><a href="\">Current Workflow</a></div>
+		<div class="nav_link"><a href="\create-workflow">Create a New Workflow</a></div>
+		<div class="nav_link"><a href="\manage-workflows">Manage Workflows</a></div>
+		<div class="nav_link"><a href="\learn">Learn</a></div>
 	</div>
 </template>
 
@@ -31,24 +19,30 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-	 table.center {
-    	margin-left:auto;
-    	margin-right:auto;
-    	width: 800px;
-    	height: 45px;
+	.nav_container {
+		display: flex;
 		background-color: #d1d7b3;
-  	}
-
-	table {
+		height: 45px;
+		justify-content: space-around;
 		margin-top: 40px;
 		margin-bottom: 40px;
-		border: 2px solid #5A6100;	}
+		margin-left:auto;
+		margin-right:auto;
+		width: 80%;
+	}
 
-	tr {text-align:center;}
+	.nav_link {
+		align-self: center;
+	}
 
 	a {
 		color: #5a6100;
 	}
+
+	a:link {
+		text-decoration: none;
+	}
+
 	a:hover {
    		text-decoration: underline;
 	}
