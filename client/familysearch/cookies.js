@@ -4,7 +4,7 @@
  *
  * https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
  */
-var cookiesUtil = {
+export const cookiesUtil = {
 	getItem: function (sKey) {
 		if (!sKey) {
 			return null;
@@ -15,7 +15,7 @@ var cookiesUtil = {
 		if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) {
 			return false;
 		}
-		var sExpires = "";
+		let sExpires = "";
 		if (vEnd) {
 			switch (vEnd.constructor) {
 				case Number:
@@ -46,8 +46,8 @@ var cookiesUtil = {
 		return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
 	},
 	keys: function () {
-		var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
-		for (var nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) {
+		const aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
+		for (let nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) {
 			aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]);
 		}
 		return aKeys;

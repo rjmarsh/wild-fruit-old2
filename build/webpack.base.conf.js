@@ -26,6 +26,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js',
       'client': path.resolve(__dirname, '../client'),
       'assets': path.resolve(__dirname, '../client/assets'),
+      'familysearch': path.resolve(__dirname, '../client/familysearch'),
       'components': path.resolve(__dirname, '../client/components')
     }
   },

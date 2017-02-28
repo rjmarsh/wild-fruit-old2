@@ -4,9 +4,20 @@
 			<img class="olive_tree" src="/static/img/olive_tree.png"/><span class="header_text">Wild Fruit</span>
 		</div>
 		<div class="wild_fruit_status">
-			<div class="FamilySearch_login">
-				<div class="FamilySearch_signin_signout">logout</div>
-				<div class="FamilySearch_username">rjmarsh</div>
+			<div v-if="loggedIn" class="FamilySearch_login">
+				<div class="FamilySearch_show_login">
+					<div @click="logout" class="FamilySearch_show_logout">
+						logout
+					</div>
+					<div class="FamilySearch_username">
+						{{username}}
+					</div>
+				</div>
+			</div>
+			<div v-else>
+				<div @click="login" class="FamilySearch_show_login">
+					login
+				</div>
 			</div>
 			<div class="FamilySearch_logo">
 				<img class="fsicon" src="/static/img/icons/FamilySearch Logo/FSMosaicTreeLogo.png"/>
@@ -16,10 +27,36 @@
 </template>
 
 <script>
+	import fsClient from '../familysearch/familysearch-client';
+
 	export default {
 		name: 'wf-header',
 		data() {
-			return {};
+			return {
+				loggedIn: false,
+				username: '',
+			};
+		},
+		created() {
+			fsClient.getUser().then(function(user) {
+				this.username = user.username;
+			}).catch(function(error) {
+				console.log(error);
+			});
+		},
+		methods: {
+			logout() {
+				this.loggedIn = false;
+				this.username
+				fsClient.logout();
+				debugger; // will we ever get here?
+			},
+			login() {
+				this.loggedIn = true;
+				this.username = fsClient.getUser();
+				fsClient.login();
+				debugger; // will we ever get here?
+			}
 		},
 	};
 </script>
@@ -69,7 +106,7 @@
 		font-family: "Georgia";
 	}
 
-	.FamilySearch_signin_signout {
+	.FamilySearch_login_logout {
 		flex: 1;
 		order: 2;
 		flex-basis: 15%;
