@@ -28,10 +28,7 @@ const routes = [
 			{
 				path: "/learn",
 				component: Learn,
-			},
-			[
-				path: "/familysearc"
-			]
+			}
 		],
 	},
 ];
