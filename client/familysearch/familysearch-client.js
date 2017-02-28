@@ -13,8 +13,8 @@ const fsClient = new FamilySearch({
 	// Here we programmatically set the redirect uri to the base path of the
 	// current domain. That helps the sample app work wherever it runs so
 	// that we don't have to change this between development and production.
-//	redirectUri: document.location.protocol + '//' + document.location.host + '/',
-	redirectUri: document.location.protocol + '//' + document.location.host + '/familysearch/authentication-redirect-end',
+	redirectUri: document.location.protocol + '//' + document.location.host + '/',
+//	redirectUri: document.location.protocol + '//' + document.location.host + '/familysearch/authentication-redirect-end',
 
 	// Store the access token in a cookie so that the user doesn't have to
 	// login every time the page loads
